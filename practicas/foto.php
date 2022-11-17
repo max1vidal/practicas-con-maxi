@@ -68,10 +68,10 @@
     <div class="form-group">
       <label for="exampleSelect1" class="form-label mt-4">Curso</label>
       <select class="form-select" id="exampleSelect1">
-        <option>MMO</option>
-        <option>Electro</option>
-        <option>Informatíca mañana</option>
-        <option>Informatíca tarde</option>
+        <option VALUE="1">MMO</option>
+        <option VALUE="2">Electro</option>
+        <option VALUE="3">Informatíca mañana</option>
+        <option VALUE="4">Informatíca tarde</option>
         
       </select>
     </div>
