@@ -10,6 +10,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+
+
+
 </head>
 </head>
 
@@ -25,75 +28,84 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
-            
 
-          
+
+
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="index.php">Inicio</a>
           </li>
 
 
-          
-          
 
-        
+
+
+
 
         </ul>
-        
 
 
 
-    </nav>
+
+  </nav>
 
 
-    <form>
-  <fieldset>
-    <legend></legend>
-    <div class="form-group row">
-      <label for="staticEmail" class="col-sm-2 col-form-label"></label>
-      <div class="col-sm-10">
-        <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="">
+  <form action="nueva_foto.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+
+
+      <div class="form-group">
+        <label name="curso" for="curso" class="form-label mt-4">Curso</label>
+        <select class="form-select" name="cmbCurso" id="curso">
+          <option value="1">MMO</option>
+          <option value="2">Electro</option>
+          <option value="3">Informatíca mañana</option>
+          <option value="4">Informatíca tarde</option>
+
+        </select>
       </div>
-    </div>
-    <div class="form-group">
-      <label for="exampleInput" class="form-label mt-4">Nombre y apellido</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre Apellido">
-      <small id="emailHelp" class="form-text text-muted">Recuerde poner correctamente el nombre y apellido.</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleTextarea1" class="form-label mt-4">Instagram</label>
-      <textarea class="form-control" id="exampleTextarea1" rows="1"></textarea>
-    </div>
-    <div class="form-group">
-      <label for="exampleSelect1" class="form-label mt-4">Curso</label>
-      <select class="form-select" id="exampleSelect1">
-        <option VALUE="1">MMO</option>
-        <option VALUE="2">Electro</option>
-        <option VALUE="3">Informatíca mañana</option>
-        <option VALUE="4">Informatíca tarde</option>
-        
-      </select>
-    </div>
-    
-    <div class="form-group">
-      <label for="exampleTextarea" class="form-label mt-4">Descripción</label>
-      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-    </div>
-    <div class="form-group">
-      <label for="formFile" class="form-label mt-4">Subir Archivo</label>
-      <input class="form-control" type="file" id="formFile">
-    </div>
-    
 
-    <p>holaa</p>
 
-    <fieldset class="d-flex justify-content-end">
-    <button class="btn btn-secondary my-2 my-sm-0" type="submit" class="btn btn-primary">Submit</button>
-    </fieldset>  
-</fieldset>
-</form>
-   
+
+
+      <div class="form-group">
+        <label for="nombre" class="form-label mt-4">Nombre</label>
+        <textarea class="form-control" name="txtNombre" id="nombre" rows="1"></textarea>
+      </div>
+
+
+
+
+      <div class="form-group">
+        <label for="ig" class="form-label mt-4">Instagram</label>
+        <textarea class="form-control" name="txtIg" id="ig" rows="1"></textarea>
+      </div>
+
+
+
+      <div class="form-group">
+        <label for="descripcion" class="form-label mt-4">Descripción</label>
+        <textarea class="form-control" name="txtDes" id="descripcion" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="img" class="form-label mt-4">Subir Archivo</label>
+        <input class="form-control" name="txtImg" type="file" id="img">
+        <fieldset class="d-flex justify-content-end">
+          <button class="btn btn-secondary my-2 my-sm-0" type="sumbit" class="btn btn-primary">Subir</button>
+        </fieldset>
+      </div>
+
+
+
+
+
+    </fieldset>
+  </form>
+
+
+
+
 
 
 

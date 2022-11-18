@@ -1,7 +1,10 @@
-$link = mysql_connect('localhost', 'root', 'password');
-if (!$link)
-   die('Error al conectarse con MySQL: ' . mysql_error().' <br>Número del error: '.mysql_errno());
-if (! @mysql_select_db("db_AdMX",$link)){
-   echo "No se pudo conectar correctamente con la Base de datos";
-   exit();
+<?php
+
+
+$mysqli = new mysqli("localhost", "root", "admin", "basedt", 3306);
+if ($mysqli->connect_errno) {
+echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
+
+echo $mysqli->host_info . "\n";
+?>

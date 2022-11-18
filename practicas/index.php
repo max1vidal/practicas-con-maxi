@@ -40,28 +40,30 @@
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Mañana</a>
               <a class="dropdown-item" href="#">Tarde</a>
-              
+
 
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="foto.php">Subir foto </a>
-            
+
           </li>
-
-
-          
-          
-
-        
-
         </ul>
-        
+      </div>
+  </nav>
 
 
 
-      
-   
+
+
+
+
+
+
+
+
+
+
 
 
 
