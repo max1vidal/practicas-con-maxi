@@ -5,8 +5,7 @@
         $sinarroba = substr($conarroba,1);
         $nuevoInstagram = "https://www.instagram.com/" . $sinarroba;
         
-    ?>
-<div class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem;">
     <img class="card-img-top" src="imagenes/Logo-removebg-preview.png" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">esc tec n°5</h5>
@@ -16,6 +15,8 @@
       <a href="https://www.instagram.com/damiancamisay/" class="btn btn-primary">redes</a>
     </div>
   </div>
+    ?>
+
     
 <p>dsghghdgashdgajhs</p>
 <a href="<?php echo $instagram;?>">Ingrese al instgram</a>
